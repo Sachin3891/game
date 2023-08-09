@@ -9,9 +9,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 200vh;
     background: linear-gradient(#2196f3, #e91e63);
-    overflow: hidden;
+    overflow: auto;
 }
 ::selection{
     color: #fff;

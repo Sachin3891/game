@@ -9,9 +9,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 240vh;
     background: linear-gradient(#2196f3, #e91e63);
-    overflow: hidden;
+    overflow-y: auto;
 }
 ::selection{
     color: #fff;
@@ -19,10 +19,17 @@ body{
 }
 .start_btn,
 .info_box,
-.quiz_box,
-.result_box{
+.quiz_box{
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.result_box{
+    position: absolute;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
@@ -199,14 +206,14 @@ section .option_list .option:hover{
     border: 1px solid #b8daff;
 }
 section .option_list .option.correct{
-    color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
+    /* color: #155724; */
+    background: #838383;
+    border: 1px solid #838383;
 }
 section .option_list .option.incorrect{
-    color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    /* color: #721c24; */
+    background: #838383;
+    border: 1px solid #838383;
 }
 section .option_list .option.disabled{
     pointer-events: none;
@@ -282,11 +289,11 @@ footer button.show{
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width: 450px;
+    /* width: 450px; */
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    transform: translate(-50%, -50%) scale(0.9);
+    /* transform: translate(-50%, -50%) scale(0.9); */
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -344,17 +351,26 @@ footer button.show{
 } */
 
 .buttons button.restart{
-    color: #fff;
-    background: #007bff;
+    color: #007bff;
+    background: #fff;
 }
 .buttons button.restart:hover{
-    background: #0263ca;
+    color: #fff;
+    background: #007bff;
 }
 .buttons button.quit{
     color: #007bff;
     background: #fff;
 }
 .buttons button.quit:hover{
+    color: #fff;
+    background: #007bff;
+}
+.buttons button.shows{
+    color: #007bff;
+    background: #fff;
+}
+.buttons button.shows:hover{
     color: #fff;
     background: #007bff;
 }
